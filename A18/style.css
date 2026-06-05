@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a1a2e;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* 카드 컨테이너: perspective로 3D 공간 설정 */
+.card-wrap {
+  width: 160px;
+  height: 220px;
+  perspective: 800px;
+}
+
+/* 카드 내부: 앞·뒷면을 감싸는 요소 */
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+/* 마우스 오버 시 Y축 180도 회전 */
+.card-wrap:hover .card {
+  transform: rotateY(180deg);
+}
+
+/* 앞면·뒷면 공통 스타일 */
+.card-front,
+.card-back {
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+/* 뒷면은 처음부터 Y축 180도 회전해 숨김 */
+.card-back {
+  transform: rotateY(180deg);
+}
+
+/* 카드 앞면 텍스트 */
+.card-front span {
+  font-family: 'Arial', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: rgba(255, 255, 255, 0.85);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* 카드 뒷면 숫자 */
+.card-back span {
+  font-family: 'Georgia', serif;
+  font-size: 64px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ── 카드별 배경색 (앞면) ── */
+.card-wrap:nth-child(1) .card-front {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+.card-wrap:nth-child(2) .card-front {
+  background: linear-gradient(135deg, #e67e22, #d35400);
+}
+.card-wrap:nth-child(3) .card-front {
+  background: linear-gradient(135deg, #27ae60, #1e8449);
+}
+.card-wrap:nth-child(4) .card-front {
+  background: linear-gradient(135deg, #2980b9, #1a6fa8);
+}
+.card-wrap:nth-child(5) .card-front {
+  background: linear-gradient(135deg, #8e44ad, #6c3483);
+}
+.card-wrap:nth-child(6) .card-front {
+  background: linear-gradient(135deg, #16a085, #0e6655);
+}
+
+/* ── 카드별 배경색 (뒷면: 앞면보다 어두운 톤) ── */
+.card-wrap:nth-child(1) .card-back {
+  background: linear-gradient(135deg, #c0392b, #96281b);
+}
+.card-wrap:nth-child(2) .card-back {
+  background: linear-gradient(135deg, #d35400, #a04000);
+}
+.card-wrap:nth-child(3) .card-back {
+  background: linear-gradient(135deg, #1e8449, #145a32);
+}
+.card-wrap:nth-child(4) .card-back {
+  background: linear-gradient(135deg, #1a6fa8, #1a5276);
+}
+.card-wrap:nth-child(5) .card-back {
+  background: linear-gradient(135deg, #6c3483, #4a235a);
+}
+.card-wrap:nth-child(6) .card-back {
+  background: linear-gradient(135deg, #0e6655, #0a4d3e);
+}
