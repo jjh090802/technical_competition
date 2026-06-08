@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A19 - 카드 스택 애니메이션</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<input type="radio" name="card" id="s1" checked>
+<input type="radio" name="card" id="s2">
+<input type="radio" name="card" id="s3">
+
+<div class="app">
+
+  <div class="scene">
+    <div class="stack">
+      <div class="card card-3">
+        <span class="card-num">03</span>
+        <span class="card-lbl">Card Three</span>
+      </div>
+      <div class="card card-2">
+        <span class="card-num">02</span>
+        <span class="card-lbl">Card Two</span>
+      </div>
+      <div class="card card-1">
+        <span class="card-num">01</span>
+        <span class="card-lbl">Card One</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="dots">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+
+  <div class="navs">
+    <label for="s3" class="btn btn-prev prev-1">← 이전</label>
+    <label for="s1" class="btn btn-prev prev-2">← 이전</label>
+    <label for="s2" class="btn btn-prev prev-3">← 이전</label>
+    <label for="s2" class="btn btn-next next-1">다음 →</label>
+    <label for="s3" class="btn btn-next next-2">다음 →</label>
+    <label for="s1" class="btn btn-next next-3">다음 →</label>
+  </div>
+
+</div>
+
+</body>
+</html>

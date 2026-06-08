@@ -1,0 +1,217 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(ellipse at 50% 25%, #1c1b3a 0%, #0d0c1d 70%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ─── 라디오 인풋 숨기기 ─── */
+#s1, #s2, #s3 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 44px;
+}
+
+/* ─── 3D 씬 ─── */
+.scene {
+  width: 400px;
+  height: 290px;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+.stack {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+/* ─── 카드 공통 ─── */
+.card {
+  position: absolute;
+  top: 45px;
+  left: 60px;
+  width: 280px;
+  height: 180px;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: #fff;
+  will-change: transform, opacity;
+  transition: transform 0.6s cubic-bezier(0.34,1.42,0.64,1),
+              opacity 0.45s ease,
+              box-shadow 0.45s ease;
+}
+
+.card-num {
+  font-size: 4.8rem;
+  font-weight: 900;
+  letter-spacing: -4px;
+  line-height: 1;
+}
+
+.card-lbl {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  opacity: 0.72;
+}
+
+.card-1 { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+.card-2 { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+.card-3 {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  color: #0d3830;
+}
+
+/* ─── 카드 위치 (State 1: card-3 앞·card-2 중간·card-1 뒤) ─── */
+body:has(#s1:checked) .card-3 {
+  transform: translateZ(120px) rotateY(0deg);
+  opacity: 1;
+  z-index: 3;
+  box-shadow: 0 28px 72px rgba(102,126,234,0.68);
+}
+body:has(#s1:checked) .card-2 {
+  transform: translateZ(20px) translateX(20px) rotateY(-14deg);
+  opacity: 0.55;
+  z-index: 2;
+  box-shadow: 0 12px 36px rgba(0,0,0,0.5);
+}
+body:has(#s1:checked) .card-1 {
+  transform: translateZ(-50px) translateX(42px) rotateY(-28deg);
+  opacity: 0.28;
+  z-index: 1;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.38);
+}
+
+/* ─── State 2: card-2 앞·card-1 중간·card-3 뒤 ─── */
+body:has(#s2:checked) .card-2 {
+  transform: translateZ(120px) rotateY(0deg);
+  opacity: 1;
+  z-index: 3;
+  box-shadow: 0 28px 72px rgba(240,80,108,0.68);
+}
+body:has(#s2:checked) .card-1 {
+  transform: translateZ(20px) translateX(20px) rotateY(-14deg);
+  opacity: 0.55;
+  z-index: 2;
+  box-shadow: 0 12px 36px rgba(0,0,0,0.5);
+}
+body:has(#s2:checked) .card-3 {
+  transform: translateZ(-50px) translateX(42px) rotateY(-28deg);
+  opacity: 0.28;
+  z-index: 1;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.38);
+}
+
+/* ─── State 3: card-1 앞·card-3 중간·card-2 뒤 ─── */
+body:has(#s3:checked) .card-1 {
+  transform: translateZ(120px) rotateY(0deg);
+  opacity: 1;
+  z-index: 3;
+  box-shadow: 0 28px 72px rgba(56,249,215,0.52);
+}
+body:has(#s3:checked) .card-3 {
+  transform: translateZ(20px) translateX(20px) rotateY(-14deg);
+  opacity: 0.55;
+  z-index: 2;
+  box-shadow: 0 12px 36px rgba(0,0,0,0.5);
+}
+body:has(#s3:checked) .card-2 {
+  transform: translateZ(-50px) translateX(42px) rotateY(-28deg);
+  opacity: 0.28;
+  z-index: 1;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.38);
+}
+
+/* ─── 점 인디케이터 ─── */
+.dots {
+  display: flex;
+  gap: 10px;
+  margin-top: -14px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+body:has(#s1:checked) .dots .dot:nth-child(1),
+body:has(#s2:checked) .dots .dot:nth-child(2),
+body:has(#s3:checked) .dots .dot:nth-child(3) {
+  background: rgba(255,255,255,0.9);
+  transform: scale(1.5);
+}
+
+/* ─── 네비게이션 버튼 ─── */
+.navs {
+  display: flex;
+  gap: 14px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 36px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  border: none;
+  transition: transform 0.14s ease, box-shadow 0.14s ease, background 0.14s ease;
+}
+
+.btn:hover  { transform: translateY(-3px) scale(1.05); }
+.btn:active { transform: scale(0.96); }
+
+.btn-prev {
+  color: rgba(255,255,255,0.85);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.18);
+}
+.btn-prev:hover { background: rgba(255,255,255,0.15); }
+
+.btn-next {
+  color: #fff;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 6px 22px rgba(118,75,162,0.45);
+}
+.btn-next:hover { box-shadow: 0 10px 30px rgba(118,75,162,0.65); }
+
+/* ─── 버튼 표시 제어 ─── */
+.prev-1, .prev-2, .prev-3,
+.next-1, .next-2, .next-3 { display: none; }
+
+body:has(#s1:checked) .prev-1,
+body:has(#s1:checked) .next-1,
+body:has(#s2:checked) .prev-2,
+body:has(#s2:checked) .next-2,
+body:has(#s3:checked) .prev-3,
+body:has(#s3:checked) .next-3 { display: inline-block; }
