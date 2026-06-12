@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box{
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+h1{
+    background-color: rgb(41, 40, 40);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+img{
+    border-radius: 15px;
+    width: 100px;
+}
+
+.img_line{
+    padding: 20px;
+    display: flex;
+}
+
+.text{
+    list-style: none;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button_box{
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.minus, .plus {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.delete{
+    background-color: rgb(223, 0, 0);
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+}
+
+.libox{
+    background-color: #eeeeeeb0;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.coin{
+    display: flex;
+    list-style: none;
+
+}
+
+.all{
+    display: flex;
+    list-style: none;
+    padding: 5px;
+}
+
+
+.right{
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.rpthr{
+    background-color: gray;
+}
+
+.wnans{
+    background-color: rgb(116, 192, 3);
+}
+
+.btn_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    gap: 10px;
+}
+
+.btn_box > button{
+    border-radius: 6px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 30px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.btn_box > button:hover{
+    color: #ccc;
+}
