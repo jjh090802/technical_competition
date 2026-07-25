@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pat Care | 믿고 맡기는 반려 돌봄 플렛폼</title>
+</head>
+<body>
+
+    <input type="checkbox" hidden id="join_box_del">
+    <input type="checkbox" hidden id="login_box_del">
+
+    <header>
+        <div class="logo_img_box">
+            <a href="../선수제공파일/index.html"><img src="logo.png" alt="logo_img" title="로고사진" width="250px"></a>
+        </div>
+
+        <nav>
+            <div class="site_reader">
+                <a href="#">사이트 소개</a>
+
+                <div id="submenu">
+                    <li class="hight"><a href="#">서비스 소개</a></li>
+                    <li class="low"><a href="#">회사 소개</a></li>
+                </div>
+            </div>
+
+            <div class="patceater">
+                <a href="#">펫시터</a>
+
+                <ul id="submenu">
+                    <li class="hight"><a href="#">전체 펫시터</a></li>
+                    <li class="middle"><a href="#">인기 펫시터</a></li>
+                    <li class="low"><a href="#">펫시터 지원</a></li>
+                </ul>
+            </div>
+
+            <div class="dolebom">
+                <a href="#">돌봄</a>
+            
+                <ul id="submenu">
+                    <li class="hight"><a href="#">예약하기</a></li>
+                    <li class="low"><a href="#">돌봄 서비스 안내</a></li>
+                </ul>
+            </div>
+
+            <div class="dolebom">
+                <a href="#">회원 서비스</a>
+
+                <ul id="submenu">
+                    <li class="hight"><a href="#">마이페이지</a></li>
+                    <li class="low"><a href="#">회원가입</a></li>
+                </ul>
+            </div>
+            
+            <div class="dolebom">
+                <a href="#">관리자</a>
+            
+                <ul id="submenu">
+                    <li class="hight"><a href="#">펫시터 지원 관리</a></li>
+                    <li class="middle"><a href="#">예약 / 신청 내역</a></li>
+                    <li class="low"><a href="#">회원 관리</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="login_box">
+            <label for="login_box_del">
+                <span class="login">로그인</span>
+            </label>
+            
+            <label for="join_box_del">
+                <span class="join">회원가입</span>
+            </label>
+        </div>
+
+    </header>
+    <div class="login_SubBox">
+        <div class="login_move_box">
+            <label for="login_box_del">
+                <span>X</span>
+            </label>
+            <h2>로그인</h2>
+            <input type="text" placeholder="아이디"><br>
+            <input type="password" placeholder="비밀번호">
+
+            <div class="button_center">
+                <button >로그인</button>
+                <span>아직 회원이 아니신가요?<a href="#">회원가입하러가기</a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="join_SubBox">
+        <div class="join_move_box">
+            <label for="join_box_del">
+                <span>X</span>
+            </label>
+            <h2>회원가입</h2>
+            <input type="text" placeholder="아이디"><br>
+            <input type="password" placeholder="비밀번호">
+
+            <div class="button_center">
+                <button >회원가입</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
