@@ -106,7 +106,7 @@ nav > div > #submenu .low:hover{
 
 }
 
-li{
+#submenu li{
     list-style: none;
     transition: 0.3s;
     border-radius: 10px;
@@ -482,4 +482,64 @@ footer > span{
     color: white;
 }
 
+footer > .footer-top > .list > ul > li > a:hover{
+    color: rgb(253, 253, 189);
+}
 
+
+
+
+ul{
+    list-style: none;
+}
+
+.list_box{
+    list-style: none;
+    background-color: rgba(230, 243, 231, 0.719);
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+}
+
+.list_box > li{
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    background-color: white;
+
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+    width: 70%;
+}
+
+.front{
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: 0.3s;
+}
+
+input[name="FAQ"]:checked ~ label + .front {
+    grid-template-rows: 1fr;
+}
+
+.list_box label{
+    display: block;
+    border: 1px solid #ccc;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.back{
+    overflow: hidden;
+
+}
+
+.back_inner{
+    padding: 20px;
+
+}
