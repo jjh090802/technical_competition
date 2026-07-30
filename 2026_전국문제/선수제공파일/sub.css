@@ -191,5 +191,63 @@ main{
     padding: 5px;
     font-weight: bold;
     color: rgb(199, 83, 83);
+}
 
+.text_box > h2{
+    margin-top: 15px;
+}
+
+.care{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #cccccc98;
+}
+
+.care_boxs{
+    display: flex;
+    gap: 20px;
+}
+
+.care_box{
+    width: 350px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    transition: 0.5s;
+    border: 1px solid #ccc;
+}
+
+.care_box:hover{
+    transform: translatey(-10px);
+    border: 1px solid #868686;
+}
+.care_box:hover .bull{
+    transform: rotateZ(360deg);
+
+}
+
+.bull{
+    background-color: rgb(245, 206, 33);
+    padding: 15px;
+    border-radius: 50%;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+}
+
+.care > h1 {
+    margin-right: 50%;
 }

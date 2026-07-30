@@ -490,6 +490,7 @@ footer hr{
 
 footer > .footer-top > div > ul > li > a{
     color: rgba(255, 255, 255, 0.74);
+    transition: 0.5s;
 }
 
 footer > span{
@@ -499,6 +500,8 @@ footer > span{
 
 footer > .footer-top > .list > ul > li > a:hover{
     color: rgb(253, 253, 189);
+
+    
 }
 
 
@@ -695,4 +698,76 @@ input[name="FAQ"]:checked ~ label + .front {
 
 .petcenter_box > .coin > .coin_button_box > .favorites:hover{
     background-color: #b1f1a1b4;
+}
+
+.sns{
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgb(52, 92, 70);
+    color: white;
+}
+
+.sns > .sns_label > label{
+    background-color: rgb(185, 204, 247);
+    padding: 10px;
+    width: 30px;
+    border-radius: 15px;
+}
+
+.sns_img{
+    column-count: 6;
+    column-gap: 20px;
+
+}
+
+.sns_img img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    break-inside: avoid;
+    object-fit: unset;
+}
+
+
+#cat:checked ~ .sns_img .dog,#cat:checked ~ .sns_img .hamster,#cat:checked ~ .sns_img .rabbit {
+    display: none;
+}
+
+#dog:checked ~ .sns_img .cat,#dog:checked ~ .sns_img .hamster,#dog:checked ~ .sns_img .rabbit {
+    display: none;
+}
+
+#hamster:checked ~ .sns_img .dog,#hamster:checked ~ .sns_img .cat,#hamster:checked ~ .sns_img .rabbit {
+    display: none;
+}
+
+#rabbit:checked ~ .sns_img .cat,#rabbit:checked ~ .sns_img .hamster,#rabbit:checked ~ .sns_img .dog {
+    display: none;
+}
+
+#pat:checked ~ .sns_label > .pat {
+    background-color: rgb(91, 91, 170);
+}
+
+#dog:checked ~ .sns_label > .dog {
+    background-color: rgb(91, 91, 170);
+}
+
+#cat:checked ~ .sns_label > .cat {
+    background-color: rgb(91, 91, 170);
+}
+
+#hamster:checked ~ .sns_label > .hamster {
+    background-color: rgb(91, 91, 170);
+}
+
+#rabbit:checked ~ .sns_label > .rabbit {
+    background-color: rgb(91, 91, 170);
 }
