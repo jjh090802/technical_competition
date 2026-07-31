@@ -84,13 +84,15 @@
                 <span>X</span>
             </label>
             <h2>로그인</h2>
-            <input type="text" placeholder="아이디"><br>
-            <input type="password" placeholder="비밀번호">
+            <form action="register_process.php" method="post">
+                <input required name="user_id" type="text" placeholder="아이디"><br>
+                <input required name="password" type="password" placeholder="비밀번호">
 
-            <div class="button_center">
-                <button >로그인</button>
-                <span>아직 회원이 아니신가요?<a href="#">회원가입하러가기</a></span>
-            </div>
+                <div class="button_center">
+                    <button type="submit">로그인</button>
+                    <span>아직 회원이 아니신가요?<a href="#">회원가입하러가기</a></span>
+                </div>
+            </form>
         </div>
     </div>
 
@@ -100,12 +102,14 @@
                 <span>X</span>
             </label>
             <h2>회원가입</h2>
-            <input type="text" placeholder="아이디"><br>
-            <input type="password" placeholder="비밀번호">
-
-            <div class="button_center">
-                <button >회원가입</button>
-            </div>
+            <form action="register_process.php" method="post" >
+                <input required name="user_id" type="text" placeholder="아이디"><br>
+                <input required name="password" type="password" placeholder="비밀번호">
+            
+                <div class="button_center">
+                    <button type="submit">회원가입</button>
+                </div>
+            </form>
         </div>
     </div>
 
