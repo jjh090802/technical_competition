@@ -167,18 +167,19 @@ nav > div > #submenu .low:hover{
     margin-bottom: 30px;
 }
 
-.login_SubBox > .login_move_box > input{
-    padding: 20px;
+.login_SubBox > .login_move_box > form > input{
+    padding: 20px 30px;
     border-radius: 10px;
     border: 1px solid #ccc;
+    margin-bottom: 10px;
 }
-
+                       
 .login_SubBox > .login_move_box > input:focus{
     border-color: green;
     outline: none;
 }
 
-.login_SubBox > .login_move_box > .button_center > button{
+.login_SubBox > .login_move_box > form > .button_center > button{
     width: 50%;
     padding: 10px;
     border-radius: 10px;
@@ -189,7 +190,6 @@ nav > div > #submenu .low:hover{
 .button_center{
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     height: 100%;
 
@@ -294,10 +294,11 @@ nav > div > #submenu .low:hover{
     margin-bottom: 30px;
 }
 
-.join_SubBox > .join_move_box > input{
+.join_SubBox > .join_move_box > form > input{
     padding: 20px;
     border-radius: 10px;
     border: 1px solid #ccc;
+    margin-bottom: 20px;
 }
 
 .join_SubBox > .join_move_box > input:focus{
@@ -305,7 +306,7 @@ nav > div > #submenu .low:hover{
     outline: none;
 }
 
-.join_SubBox > .join_move_box > .button_center > button{
+.join_SubBox > .join_move_box > form > .button_center > button{
     width: 50%;
     padding: 10px;
     border-radius: 10px;
