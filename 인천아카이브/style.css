@@ -10,7 +10,7 @@ header{
     width: 100%;
     position: fixed;
     background-color: white;
-    z-index: 100;
+    z-index: 7;
 }
 
 header > .header_min {
@@ -88,12 +88,18 @@ nav > ul > li:hover .sub_nav{
 
 }
 
-.sub_nav > li {
+.sub_nav > li > a {
     border-radius: 10px;
     padding: 5px;
-    transition: background-color 0.2s, color 0.2s;
+    transition: 0.2s;
 }
-.sub_nav > li:hover {
+
+.sub_nav > li > a{
+    color: black;
+    text-decoration: none;
+}
+
+.sub_nav > li:hover > a{
     background-color: #eaf6fc;
     color: skyblue;
 }
@@ -149,10 +155,6 @@ ul{
 }
 
 /* 푸터css */
-
-main{
-    padding-top: 75px;
-}
 
 .hero-slider > .slide {
     width: 100%;
@@ -218,6 +220,10 @@ main{
   37%      { background: gray; width: 8px; border-radius: 50%; }
 }
 
+main{
+    margin-top: 75px;
+}
+
 /* 소개영역 */
 
 .introduce_box {
@@ -278,3 +284,184 @@ main{
 /* 소개영역 */
 
 
+/* 공지사항 */
+
+.notice {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.notice_box{
+    width: 70%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.notice ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.notice a {
+    color: black;
+    text-decoration: none;
+}
+
+.notice > .text_box{
+    display: flex;
+}
+
+.notice .num{
+    background-color: skyblue;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.notice li > a {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 공지사항 */
+
+
+/* 이용수칙 */
+
+.rule {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.rule_box {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;   
+    padding: 20px;
+
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.rule .item_box {
+    display: flex;
+    gap: 20px;
+}
+
+.rule .item {
+    width: 400px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transition: 0.5s;
+}
+
+.rule .item:hover {
+    transform: translateY(-10px);
+    background-color: rgba(231, 237, 240, 0.329);
+}
+
+.rule .item:hover > .icon {
+    color: skyblue;
+    transition: 0.3s;
+}
+
+.rule .icon {
+    font-size: 30px;
+}
+
+/* 이용수칙 */
+
+/* 자주묻는 질문 영역 */
+
+.lnquiry {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+
+    background-color: rgba(135, 207, 235, 0.158);
+}
+
+.lnquiry_box {
+    width: 70%;
+
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    overflow: hidden;
+    
+}
+
+.lnquiry .item_box {
+    display: flex;
+    width: max-content;
+    animation: move 20s linear infinite;
+}
+
+.lnquiry .item {
+    flex-shrink: 0;
+    padding: 16px 24px;
+    margin-right: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: 0.3s;
+    background-color: white;
+}
+
+.lnquiry .item > .icon {
+    background-color: skyblue;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+@keyframes move{
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);  /* 전체 폭의 절반(=원본 세트 길이)만큼 이동 */
+  }
+}
+
+.lnquiry .item_box:hover {
+  animation-play-state: paused;
+}
+
+.lnquiry .item:hover {
+  transform: translateY(-10px);
+  border: 1px solid #ccc;
+  box-shadow:0 4px 5px rgba(0, 0, 0, 0.308);
+}
+/* 자주묻는 질문 영역 */
