@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 헤더css */
+
+header{
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    z-index: 7;
+    border-bottom: 1px solid #ccc;
+}
+
+header > .header_min {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header > .header_min > .header_logo_box > a{
+    display: flex;
+    align-items: center;
+    color: skyblue;
+    text-decoration: none;
+    gap: 10px;
+}
+
+header > .header_min > .header_logo_box > a > i{
+    font-size: 30px;
+}
+
+.auth-buttons > a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border:1px solid #ccc;
+    border-radius: 10px;
+}
+
+nav > ul > li{
+    position: relative;
+    
+}
+
+nav > ul > li > a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav > ul > li > a:hover {
+    color: skyblue;
+}
+
+nav > ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+
+.sub_nav {
+  position: absolute;
+  border-radius: 20px;
+  width: max-content;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  left: 50%;
+  top: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  border: 1px solid #eee;
+  list-style: none;
+  transform: translateX(-50%);
+  transition: 0.3s;
+}
+
+nav > ul > li:hover .sub_nav{
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.sub_nav > li > a {
+    border-radius: 10px;
+    padding: 5px;
+    transition: 0.2s;
+}
+
+.sub_nav > li > a{
+    color: black;
+    text-decoration: none;
+}
+
+.sub_nav > li:hover > a{
+    background-color: #eaf6fc;
+    color: skyblue;
+}
+
+/* 헤더css */
+
+/* 푸터css */
+
+footer{
+
+    background-color: #cccccc36;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hi_footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px 20px 0px;
+}
+
+footer > .footer_width > .hi_footer > a{
+    display: flex;
+    align-items: center;
+    color: skyblue;
+    text-decoration: none;
+    gap: 10px;
+}
+
+ul{
+    list-style: none;
+}
+
+.low_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.sns_box{
+    font-size: 30px;
+}
+
+.sns_box > a {
+    color: black;
+}
+
+.sns_box > a >  i:hover {
+    color: skyblue;
+    transition: 0.3s;
+}
+
+/* 푸터css */
+
+main{
+    padding-top: 75px;
+    height: 900px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* 배스트 게시판 */
+
+.Best_list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Best_list ul{
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.Best_list li > a{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.Best_list .date_love {
+    display: flex;
+    gap: 20px;
+}
+
+main .button_box {
+    width: 70%;
+    margin-bottom: 30px;
+
+}
+
+select{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.butn_bex {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+    z-index: 7;
+}
+
+.button > label {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.page_btn {
+  background: #ccc;
+  color: black;
+  border-color: gray;
+  font-weight: 500;
+
+  padding: 5px;
+  border-radius:5px;
+}
+
+  
+
+#page1:checked ~ .Best_list > .page1 {
+    opacity: 1;
+}
+
+#page1:checked ~ .button > .p1,
+#page2:checked ~ .button > .p2,
+#page3:checked ~ .button > .p3,
+#page4:checked ~ .button > .p4,
+#page5:checked ~ .button > .p5 {
+    background: #222;
+    color: #fff;
+    border-color: #222;
+}
+
+.Best_list {
+    position: relative;
+    height:450px
+}
+
+.Best_list > ul{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s;
+}
+
+#page1:checked ~ .Best_list .page1,
+#page2:checked ~ .Best_list .page2,
+#page3:checked ~ .Best_list .page3,
+#page4:checked ~ .Best_list .page4,
+#page5:checked ~ .Best_list .page5 {
+  opacity: 1;
+  pointer-events: auto;
+
+}
+
+.item {
+  opacity: 0;
+  transform: translateY(20px);   /* 아래에서 시작 → 위로 올라오는 느낌 */
+}
+
+#page1:checked ~ .Best_list .page1 .item,
+#page2:checked ~ .Best_list .page2 .item,
+#page3:checked ~ .Best_list .page3 .item,
+#page4:checked ~ .Best_list .page4 .item,
+#page5:checked ~ .Best_list .page5 .item {
+  animation: itemMove 0.4s ease forwards;
+}
+
+@keyframes itemMove {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
