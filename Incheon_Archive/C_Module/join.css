@@ -157,6 +157,118 @@ ul{
 
 /* 푸터css */
 
-main{
-    padding-bottom: 75px;
+.auth_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 0px 50px;
+}
+
+.auth_box {
+  width: 380px;
+  padding: 44px 32px;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.auth_box h1 {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+/* 프로필 사진 업로드 - 원형 미리보기 */
+.profile_upload {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.profile_preview {
+  position: relative;
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  display: block;
+}
+
+.profile_preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.upload_icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 26px;
+  height: 26px;
+  background: #222;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+}
+
+.auth_form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.input_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.auth_input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 9px 3px;
+  font-size: 14px;
+  outline: none;
+  background: transparent;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.auth_input:focus {
+  border-bottom: 2px solid #1d7fd8;
+}
+
+.input_hint {
+  font-size: 11px;
+  color: #999;
+}
+
+.auth_submit {
+  margin-top: 10px;
+  padding: 12px;
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.auth_switch {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+}
+
+.auth_switch a {
+  color: #1d7fd8;
+  text-decoration: none;
 }

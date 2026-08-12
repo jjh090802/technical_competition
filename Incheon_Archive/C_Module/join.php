@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="join.css">
     <link rel="stylesheet" href="../공통제공파일/fontawesome/css/all.min.css">
     <title>Document</title>
 </head>
@@ -37,14 +37,49 @@
             </nav>
 
             <div class="auth-buttons">
-                <a href="#" class="btn_signin">로그인</a>
-                <a href="#" class="btn_signup">회원가입</a>
+                <a href="login.php" class="btn_signin">로그인</a>
+                <a href="join.php" class="btn_signup">회원가입</a>
             </div>
         </div>
     </header>
 
-    <main></main>
-
+    <main class="auth_main">
+        <div class="auth_box signup_box">
+            <h1>회원가입</h1>
+    
+            <form id="signupForm" class="auth_form" enctype="multipart/form-data">
+            
+            <div class="profile_upload">
+                <label for="profile_image" class="profile_preview">
+                <img id="previewImg" src="./프로필/profile.jpg" alt="프로필 미리보기">
+                </label>
+                <input type="file" id="profile_image" name="profile_image" accept="image/*" hidden>
+            </div>
+    
+            <div class="input_wrap">
+                <input type="text" id="username" name="username" placeholder="아이디" class="auth_input">
+                <span class="input_hint">영문, 숫자 조합 4~12자</span>
+            </div>
+    
+            <div class="input_wrap">
+                <input type="password" id="password" name="password" placeholder="비밀번호" class="auth_input">
+                <span class="input_hint">영문, 숫자, 특수문자 조합 8~12자</span>
+            </div>
+    
+            <div class="input_wrap">
+                <input type="text" id="name" name="name" placeholder="이름" class="auth_input">
+                <span class="input_hint">한글만 입력 가능</span>
+            </div>
+    
+            <button type="submit" class="auth_submit">회원가입</button>
+            </form>
+    
+            <div class="auth_switch">
+            이미 계정이 있으신가요? <a href="login.php">로그인</a>
+            </div>
+        </div>
+    </main>
+    
     <footer>
         <div class="footer_width" style="width: 70%; padding: 20px;">
             <div class="hi_footer">
@@ -72,5 +107,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="join.js"></script>
 </body>
 </html>

@@ -383,6 +383,8 @@ main{
     justify-content: center;
     gap: 20px;
     transition: 0.5s;
+
+    text-align: center;
 }
 
 .rule .item:hover {
@@ -410,7 +412,6 @@ main{
     justify-content: center;
     user-select: none;
 
-    background-color: rgba(135, 207, 235, 0.158);
 }
 
 .lnquiry_box {

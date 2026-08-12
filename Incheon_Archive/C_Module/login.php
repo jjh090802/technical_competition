@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="join.css">
+    <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="../공통제공파일/fontawesome/css/all.min.css">
     <title>Document</title>
 </head>
@@ -37,14 +37,34 @@
             </nav>
 
             <div class="auth-buttons">
-                <a href="#" class="btn_signin">로그인</a>
-                <a href="#" class="btn_signup">회원가입</a>
+                <a href="login.php" class="btn_signin">로그인</a>
+                <a href="join.php" class="btn_signup">회원가입</a>
             </div>
         </div>
     </header>
 
-    <main></main>
-    
+    <main class="auth_main">
+        <div class="auth_box signup_box">
+            <h1>로그인</h1>
+
+            <form id="signupForm" class="auth_form" enctype="multipart/form-data">
+
+            <div class="input_wrap">
+                <input type="text" id="username" name="username" placeholder="아이디" class="auth_input">
+                <span class="input_hint">영문, 숫자 조합 4~12자</span>
+            </div>
+
+            <div class="input_wrap">
+                <input type="password" id="password" name="password" placeholder="비밀번호" class="auth_input">
+                <span class="input_hint">영문, 숫자, 특수문자 조합 8~12자</span>
+            </div>
+
+            <button type="submit" class="auth_submit">로그인</button>
+            </form>
+
+        </div>
+    </main>
+
     <footer>
         <div class="footer_width" style="width: 70%; padding: 20px;">
             <div class="hi_footer">
