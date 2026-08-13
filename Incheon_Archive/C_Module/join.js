@@ -8,3 +8,4 @@ document.getElementById('profile_image').addEventListener('change', function(e) 
     reader.readAsDataURL(file);
   }
 });
+

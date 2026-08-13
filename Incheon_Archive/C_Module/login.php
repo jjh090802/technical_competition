@@ -47,7 +47,7 @@
         <div class="auth_box signup_box">
             <h1>로그인</h1>
 
-            <form id="signupForm" class="auth_form" enctype="multipart/form-data">
+            <form id="signupForm" class="auth_form" enctype="multipart/form-data" method="POST" accept="login_process.php">
 
             <div class="input_wrap">
                 <input type="text" id="username" name="username" placeholder="아이디" class="auth_input">

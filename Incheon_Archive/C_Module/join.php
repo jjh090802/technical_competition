@@ -47,7 +47,7 @@
         <div class="auth_box signup_box">
             <h1>회원가입</h1>
     
-            <form id="signupForm" class="auth_form" enctype="multipart/form-data">
+            <form id="signupForm" class="auth_form" enctype="multipart/form-data" method="POST" action="signup_process.php" enctype="multipart/form-data">
             
             <div class="profile_upload">
                 <label for="profile_image" class="profile_preview">
