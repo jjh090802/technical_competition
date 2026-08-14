@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,8 +42,13 @@
             </nav>
 
             <div class="auth-buttons">
-                <a href="login.php" class="btn_signin">로그인</a>
-                <a href="join.php" class="btn_signup">회원가입</a>
+                <?php if (isset($_SESSION['user_id'])): ?>
+                    <span><?php echo $_SESSION['username']; ?>님</span>
+                    <a href="logout.php" class="btn_signin">로그아웃</a>
+                <?php else: ?>
+                    <a href="login.php" class="btn_signin">로그인</a>
+                    <a href="join.php" class="btn_signup">회원가입</a>
+                <?php endif; ?>
             </div>
         </div>
     </header>

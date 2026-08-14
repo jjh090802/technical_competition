@@ -37,8 +37,16 @@
             </nav>
 
             <div class="auth-buttons">
-                <a href="login.php" class="btn_signin">로그인</a>
-                <a href="join.php" class="btn_signup">회원가입</a>
+                <?php if (isset($_SESSION['user_id'])): ?>
+                    <div class="user_area">
+                        <img src="uploads/<?php echo $_SESSION['profile_image'] ?? 'default.png'; ?>" class="profile_thumb">
+                        <span><?php echo $_SESSION['username']; ?></span>
+                        <a href="logout.php" class="btn_signin">로그아웃</a>
+                    </div>
+                <?php else: ?>
+                    <a href="login.php" class="btn_signin">로그인</a>
+                    <a href="join.php" class="btn_signup">회원가입</a>
+                <?php endif; ?>
             </div>
         </div>
     </header>
@@ -47,7 +55,7 @@
         <div class="auth_box signup_box">
             <h1>로그인</h1>
 
-            <form id="signupForm" class="auth_form" enctype="multipart/form-data" method="POST" accept="login_process.php">
+            <form id="signupForm" class="auth_form" method="POST" action="login_process.php">
 
             <div class="input_wrap">
                 <input type="text" id="username" name="username" placeholder="아이디" class="auth_input">
