@@ -1,0 +1,199 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1a2436;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.book-frame {
+  border: 22px solid #c89018;
+  width: 760px;
+  height: 540px;
+  overflow: hidden;
+  position: relative;
+}
+
+.book {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* 각 페이지 기본 상태 */
+.page {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  perspective: 1200px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* 이미지 반쪽 공통 */
+.half {
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 200% 100%;
+  position: relative;
+}
+
+/*
+  왼쪽 절반: 항상 펼쳐진 상태(rotateY 없음)
+  비활성 상태에서 어둡게(방금 페이지가 넘어간 그림자 효과)
+  → 활성되면 밝아지면서 "넘어간 장의 그림자가 걷히는" 느낌
+*/
+.half.left {
+  background-position: 0% 50%;
+  filter: brightness(0.15);
+  transition: filter 0.75s ease;
+}
+
+/* 왼쪽 반 위의 그림자 오버레이 (spine 쪽 어두움) */
+.half.left::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to left, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.1) 50%, transparent 100%);
+  opacity: 1;
+  transition: opacity 0.75s ease;
+}
+
+/*
+  오른쪽 절반: spine(왼쪽 모서리)을 축으로 회전
+  - 비활성: rotateY(-90deg) → 오른쪽 끝이 뷰어 쪽으로 세워진 상태
+    (오른쪽 장이 방금 왼쪽으로 넘어간 직후 spine에 걸쳐있는 느낌)
+  - 활성: rotateY(0deg) → 평평하게 펼쳐짐
+*/
+.half.right {
+  background-position: 100% 50%;
+  transform-origin: left center;
+  transform: rotateY(-90deg);
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  backface-visibility: hidden;
+}
+
+/* 오른쪽 반 위의 spine 쪽 그림자 (책 두께감) */
+.half.right::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.1) 35%, transparent 70%);
+  opacity: 1;
+  transition: opacity 0.75s ease;
+  pointer-events: none;
+}
+
+/* 슬라이드별 배경 이미지 */
+.slide-1 .half { background-image: url(images/shanghai.jpg); }
+.slide-2 .half { background-image: url(images/kazan.jpg); }
+.slide-3 .half { background-image: url(images/lyon.jpg); }
+.slide-4 .half { background-image: url(images/sao-paulo.jpg); }
+.slide-5 .half { background-image: url(images/abu-dhabi.jpg); }
+
+/* ── 활성 페이지 ── */
+#r1:checked ~ .wrapper .book .page:nth-child(1),
+#r2:checked ~ .wrapper .book .page:nth-child(2),
+#r3:checked ~ .wrapper .book .page:nth-child(3),
+#r4:checked ~ .wrapper .book .page:nth-child(4),
+#r5:checked ~ .wrapper .book .page:nth-child(5) {
+  z-index: 2;
+  pointer-events: auto;
+}
+
+/* 활성 왼쪽 절반: 밝아짐 (그림자 걷힘) */
+#r1:checked ~ .wrapper .book .page:nth-child(1) .half.left,
+#r2:checked ~ .wrapper .book .page:nth-child(2) .half.left,
+#r3:checked ~ .wrapper .book .page:nth-child(3) .half.left,
+#r4:checked ~ .wrapper .book .page:nth-child(4) .half.left,
+#r5:checked ~ .wrapper .book .page:nth-child(5) .half.left {
+  filter: brightness(1);
+}
+
+/* 활성 왼쪽 그림자 오버레이 제거 */
+#r1:checked ~ .wrapper .book .page:nth-child(1) .half.left::after,
+#r2:checked ~ .wrapper .book .page:nth-child(2) .half.left::after,
+#r3:checked ~ .wrapper .book .page:nth-child(3) .half.left::after,
+#r4:checked ~ .wrapper .book .page:nth-child(4) .half.left::after,
+#r5:checked ~ .wrapper .book .page:nth-child(5) .half.left::after {
+  opacity: 0;
+}
+
+/* 활성 오른쪽 절반: 평평하게 펼쳐짐 (페이지 넘기기 완료) */
+#r1:checked ~ .wrapper .book .page:nth-child(1) .half.right,
+#r2:checked ~ .wrapper .book .page:nth-child(2) .half.right,
+#r3:checked ~ .wrapper .book .page:nth-child(3) .half.right,
+#r4:checked ~ .wrapper .book .page:nth-child(4) .half.right,
+#r5:checked ~ .wrapper .book .page:nth-child(5) .half.right {
+  transform: rotateY(0deg);
+}
+
+/* 활성 오른쪽 spine 그림자 페이드 */
+#r1:checked ~ .wrapper .book .page:nth-child(1) .half.right::after,
+#r2:checked ~ .wrapper .book .page:nth-child(2) .half.right::after,
+#r3:checked ~ .wrapper .book .page:nth-child(3) .half.right::after,
+#r4:checked ~ .wrapper .book .page:nth-child(4) .half.right::after,
+#r5:checked ~ .wrapper .book .page:nth-child(5) .half.right::after {
+  opacity: 0;
+}
+
+/* ── 이미지 아래 버튼 영역 ── */
+.controls {
+  width: 716px;
+}
+
+.ctrl {
+  display: none;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#r1:checked ~ .wrapper .ctrl-1,
+#r2:checked ~ .wrapper .ctrl-2,
+#r3:checked ~ .wrapper .ctrl-3,
+#r4:checked ~ .wrapper .ctrl-4,
+#r5:checked ~ .wrapper .ctrl-5 {
+  display: flex;
+}
+
+.ctrl label {
+  width: 48px;
+  height: 48px;
+  background: #c89018;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.ctrl label:hover {
+  background: #e0a820;
+  transform: scale(1.07);
+}
+
+.ctrl label:active {
+  transform: scale(0.95);
+}

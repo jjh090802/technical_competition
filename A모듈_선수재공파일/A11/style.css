@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+label > span{
+    display: none;
+}
+
+.navigation{
+    display: none;
+}
+
+@media (max-width: 769px) {
+    label > span{
+        display: block;
+    }
+
+    .main{
+        display: none;
+    }
+}
+
+input:checked ~ div > .navigation{
+    display: flex;
+}

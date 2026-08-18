@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Malgun Gothic", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f2f2f2;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+.tooltip-wrap {
+  position: relative;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 8px 12px;
+}
+
+.tooltip-wrap:focus {
+  outline: 2px solid #4a90e2;
+}
+
+/* 기본 상태: 보이지 않음 */
+.tooltip {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  width: 220px;
+  padding: 8px 10px;
+  background: #333;
+  color: #fff;
+  font-size: 13px;
+  line-height: 1.4;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+/* 마우스 오버 또는 키보드 포커스 시 노출 */
+.tooltip-wrap:hover .tooltip,
+.tooltip-wrap:focus .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* 설정: 텍스트 바로 위 */
+.tooltip-top {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 8px;
+}
+
+/* 로그아웃: 텍스트 오른쪽 */
+.tooltip-right {
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  margin-left: 8px;
+}

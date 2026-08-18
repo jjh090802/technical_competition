@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.success{
+    background-color: green;
+}
+
+.fail{
+    background-color: red;
+}
+
+ul{
+    list-style-type: none;
+
+}
+
+li{
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+
+    text-align: center;
+    color: white;
+
+    user-select: none;
+}

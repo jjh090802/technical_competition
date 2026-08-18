@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ccc;
+}
+
+#box{
+    position: absolute;
+    display: flex;
+    align-items: center;
+
+    padding: 30px;
+    background-color: white;
+    border-radius: 5px;
+}

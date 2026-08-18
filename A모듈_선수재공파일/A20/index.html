@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A20 - 플립 북</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <input type="radio" name="slide" id="r1" checked>
+  <input type="radio" name="slide" id="r2">
+  <input type="radio" name="slide" id="r3">
+  <input type="radio" name="slide" id="r4">
+  <input type="radio" name="slide" id="r5">
+
+  <div class="wrapper">
+
+    <div class="book-frame">
+      <div class="book">
+
+        <div class="page slide-1">
+          <div class="half left"></div>
+          <div class="half right"></div>
+        </div>
+
+        <div class="page slide-2">
+          <div class="half left"></div>
+          <div class="half right"></div>
+        </div>
+
+        <div class="page slide-3">
+          <div class="half left"></div>
+          <div class="half right"></div>
+        </div>
+
+        <div class="page slide-4">
+          <div class="half left"></div>
+          <div class="half right"></div>
+        </div>
+
+        <div class="page slide-5">
+          <div class="half left"></div>
+          <div class="half right"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 버튼: 이미지 아래 배치 -->
+    <div class="controls">
+      <div class="ctrl ctrl-1">
+        <label for="r5">&#10094;</label>
+        <label for="r2">&#10095;</label>
+      </div>
+      <div class="ctrl ctrl-2">
+        <label for="r1">&#10094;</label>
+        <label for="r3">&#10095;</label>
+      </div>
+      <div class="ctrl ctrl-3">
+        <label for="r2">&#10094;</label>
+        <label for="r4">&#10095;</label>
+      </div>
+      <div class="ctrl ctrl-4">
+        <label for="r3">&#10094;</label>
+        <label for="r5">&#10095;</label>
+      </div>
+      <div class="ctrl ctrl-5">
+        <label for="r4">&#10094;</label>
+        <label for="r1">&#10095;</label>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

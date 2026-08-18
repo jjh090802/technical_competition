@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+    color: white;
+}
+
+.main_box{
+    display: flex;
+    overflow: hidden;
+    width: 70%;
+}
+
+.sub_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    height: 100%;
+    width: 100%;
+    gap: 10px;
+}
+
+.img_box{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+img{
+    width: 100%;
+}
+
+.text{
+    color: rgba(243, 243, 243, 0.808);
+}
+
+.button_box{
+    display: flex;
+    gap: 15px;
+}
+
+label{
+    display: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 5px;
+    width: 40px;
+    text-align: center;
+}
+
+
+#p1:checked ~ .main_box > .sub_box {
+    transform: translateX(0%);
+}
+
+#p2:checked ~ .main_box > .sub_box {
+    transform: translateX(-100%);
+}
+
+#p3:checked ~ .main_box > .sub_box {
+    transform: translateX(-200%);
+}
+
+
+
+#p1:checked ~ .button_box > .p1 {
+    display: block;
+}
+
+#p2:checked ~ .button_box > .p2 {
+    display: block;
+}
+#p3:checked ~ .button_box > .p3 {
+    display: block;
+}

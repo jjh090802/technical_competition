@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0d0d1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.scene {
+    perspective: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel {
+    width: 220px;
+    height: 220px;
+
+    transform-style: preserve-3d;
+    animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotateY(0deg); }
+    to   { transform: rotateY(-360deg); }
+}
+
+.carousel__item {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+
+}
+
+.carousel__item:nth-child(1)  { transform: rotateY(0deg)   translateZ(415px); }
+.carousel__item:nth-child(2)  { transform: rotateY(30deg)  translateZ(415px); }
+.carousel__item:nth-child(3)  { transform: rotateY(60deg)  translateZ(415px); }
+.carousel__item:nth-child(4)  { transform: rotateY(90deg)  translateZ(415px); }
+.carousel__item:nth-child(5)  { transform: rotateY(120deg) translateZ(415px); }
+.carousel__item:nth-child(6)  { transform: rotateY(150deg) translateZ(415px); }
+.carousel__item:nth-child(7)  { transform: rotateY(180deg) translateZ(415px); }
+.carousel__item:nth-child(8)  { transform: rotateY(210deg) translateZ(415px); }
+.carousel__item:nth-child(9)  { transform: rotateY(240deg) translateZ(415px); }
+.carousel__item:nth-child(10) { transform: rotateY(270deg) translateZ(415px); }
+.carousel__item:nth-child(11) { transform: rotateY(300deg) translateZ(415px); }
+.carousel__item:nth-child(12) { transform: rotateY(330deg) translateZ(415px); }
+
+.carousel__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    transition: filter 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+    display: block;
+}
+
+.carousel__item::after {
+    content: attr(data-label);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+
+}
+
+.carousel__item:hover::after {
+    opacity: 1;
+}
+
+.carousel__item:hover img {
+    filter: brightness(0.5);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8), 0 8px 40px rgba(0, 0, 0, 0.7);
+}
+
