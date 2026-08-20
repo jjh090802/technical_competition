@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+.created {
+    display: flex;
+    gap: 20px;
+    perspective: 800px;
+}
+.card-swap {
+    background-color: rgba(240, 248, 255, 0.575);
+    width: 220px;
+    height: 300px;
+    position: relative;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+}
+
+.card-swap:hover {
+    transform: rotateY(180deg);
+}
+
+.card_front {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card_back {
+    position: absolute;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
