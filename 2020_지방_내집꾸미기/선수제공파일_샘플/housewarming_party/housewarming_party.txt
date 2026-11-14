@@ -1,0 +1,29 @@
+온라인 집들이 게시 글 (Before 사진, After 사진, 작성자 아이디, 평점, 노하우)
+
+1
+Before : before1.jpg
+After : after1.jpg
+작성자 아이디 : sky_kim
+평점 : 5
+노하우 : 회색 거실 벽을 세이지 그린으로 칠하고 주황색 소파로 포인트를 주었어요.
+
+2
+Before : before2.jpg
+After : after2.jpg
+작성자 아이디 : moon_lee
+평점 : 4
+노하우 : 매트리스만 있던 방에 패브릭 헤드보드 침대와 무드등을 들였더니 호텔 같아졌어요.
+
+3
+Before : before3.jpg
+After : after3.jpg
+작성자 아이디 : hello_park
+평점 : 5
+노하우 : 식탁 위에 펜던트 조명 두 개만 달아도 주방 분위기가 확 달라집니다.
+
+4
+Before : before4.jpg
+After : after4.jpg
+작성자 아이디 : choi_desk
+평점 : 3
+노하우 : 한쪽 벽만 초록색으로 칠하고 책장을 두어 집중이 잘 되는 서재를 만들었어요.

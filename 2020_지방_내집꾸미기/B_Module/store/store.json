@@ -1,0 +1,102 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "photo": "1.jpg",
+      "product_name": "원목 라운지 체어",
+      "brand": "우디크",
+      "price": "129,000"
+    },
+    {
+      "id": 2,
+      "photo": "2.jpg",
+      "product_name": "원목 사이드 테이블",
+      "brand": "우디크",
+      "price": "59,000"
+    },
+    {
+      "id": 3,
+      "photo": "3.jpg",
+      "product_name": "3단 원목 선반",
+      "brand": "우디크",
+      "price": "79,000"
+    },
+    {
+      "id": 4,
+      "photo": "4.jpg",
+      "product_name": "린넨 패브릭 소파",
+      "brand": "소파앤모어",
+      "price": "489,000"
+    },
+    {
+      "id": 5,
+      "photo": "5.jpg",
+      "product_name": "패브릭 쿠션 커버",
+      "brand": "포근하우스",
+      "price": "12,900"
+    },
+    {
+      "id": 6,
+      "photo": "6.jpg",
+      "product_name": "북유럽 러그",
+      "brand": "포근하우스",
+      "price": "69,000"
+    },
+    {
+      "id": 7,
+      "photo": "7.jpg",
+      "product_name": "머쉬룸 무드등",
+      "brand": "라이트온",
+      "price": "34,000"
+    },
+    {
+      "id": 8,
+      "photo": "8.jpg",
+      "product_name": "아치형 플로어 스탠드",
+      "brand": "라이트온",
+      "price": "89,000"
+    },
+    {
+      "id": 9,
+      "photo": "9.jpg",
+      "product_name": "몬스테라 화분 세트",
+      "brand": "그린데이",
+      "price": "27,000"
+    },
+    {
+      "id": 10,
+      "photo": "10.jpg",
+      "product_name": "세라믹 화병",
+      "brand": "그린데이",
+      "price": "18,500"
+    },
+    {
+      "id": 11,
+      "photo": "11.jpg",
+      "product_name": "원형 벽시계",
+      "brand": "데일리홈",
+      "price": "32,000"
+    },
+    {
+      "id": 12,
+      "photo": "12.jpg",
+      "product_name": "라운드 벽거울",
+      "brand": "데일리홈",
+      "price": "45,000"
+    },
+    {
+      "id": 13,
+      "photo": "13.jpg",
+      "product_name": "머그컵 2P 세트",
+      "brand": "데일리홈",
+      "price": "15,800"
+    },
+    {
+      "id": 14,
+      "photo": "14.jpg",
+      "product_name": "소이 캔들",
+      "brand": "데일리홈",
+      "price": "9,900"
+    }
+  ]
+}

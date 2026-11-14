@@ -1,0 +1,25 @@
+전문가 (이름, 아이디, 사진, 분야)
+
+1
+이름 : 전문가1
+아이디 : specialist1
+사진 : specialist1.jpg
+분야 : 거실·주방 리모델링
+
+2
+이름 : 전문가2
+아이디 : specialist2
+사진 : specialist2.jpg
+분야 : 홈 스타일링
+
+3
+이름 : 전문가3
+아이디 : specialist3
+사진 : specialist3.jpg
+분야 : 도배·바닥 시공
+
+4
+이름 : 전문가4
+아이디 : specialist4
+사진 : specialist4.jpg
+분야 : 조명·가구 배치
