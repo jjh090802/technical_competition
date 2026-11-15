@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<result>
+  <ccbaKdcd>17</ccbaKdcd>
+  <ccbaAsno>00740000</ccbaAsno>
+  <ccbaCtcd>ZZ</ccbaCtcd>
+  <ccbaCpno>127ZZ00740000</ccbaCpno>
+  <longitude>0</longitude>
+  <latitude>0</latitude>
+  <item>
+    <ccmaName>국가무형문화재</ccmaName>
+    <crltsnoNm>74</crltsnoNm>
+    <ccbaMnm1>대목장</ccbaMnm1>
+    <ccbaMnm2>大木匠</ccbaMnm2>
+    <gcodeName>무형문화재</gcodeName>
+    <bcodeName>전통기술</bcodeName>
+    <mcodeName>건축</mcodeName>
+    <scodeName></scodeName>
+    <ccbaQuan></ccbaQuan>
+    <ccbaAsdt>19820601</ccbaAsdt>
+    <ccbaCtcdNm>전국일원</ccbaCtcdNm>
+    <ccsiName></ccsiName>
+    <ccbaLcad>전국일원</ccbaLcad>
+    <ccceName></ccceName>
+    <ccbaPoss></ccbaPoss>
+    <ccbaAdmin>대목장 보유자</ccbaAdmin>
+    <ccbaCncl>N</ccbaCncl>
+    <ccbaCndt></ccbaCndt>
+    <image>1623440.jpg</image>
+    <imageUrl>1623440.jpg</imageUrl>
+    <content>궁궐, 사찰, 가옥 같은 목조 건축물을 짓는 장인의 기술이다. 설계부터 나무 다듬기, 짜맞추기까지 집 짓는 일 전체를 이끈다.</content>
+  </item>
+</result>

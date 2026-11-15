@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<result>
+  <ccbaKdcd>22</ccbaKdcd>
+  <ccbaAsno>00080000</ccbaAsno>
+  <ccbaCtcd>25</ccbaCtcd>
+  <ccbaCpno>1222500080000</ccbaCpno>
+  <longitude>0</longitude>
+  <latitude>0</latitude>
+  <item>
+    <ccmaName>시도무형문화재</ccmaName>
+    <crltsnoNm>8</crltsnoNm>
+    <ccbaMnm1>매사냥</ccbaMnm1>
+    <ccbaMnm2>매사냥</ccbaMnm2>
+    <gcodeName>무형문화재</gcodeName>
+    <bcodeName>전통 놀이·무예</bcodeName>
+    <mcodeName>놀이</mcodeName>
+    <scodeName></scodeName>
+    <ccbaQuan></ccbaQuan>
+    <ccbaAsdt>20000526</ccbaAsdt>
+    <ccbaCtcdNm>대전광역시</ccbaCtcdNm>
+    <ccsiName></ccsiName>
+    <ccbaLcad>대전광역시</ccbaLcad>
+    <ccceName></ccceName>
+    <ccbaPoss></ccbaPoss>
+    <ccbaAdmin>매사냥 보유자</ccbaAdmin>
+    <ccbaCncl>N</ccbaCncl>
+    <ccbaCndt></ccbaCndt>
+    <image>1623712.jpg</image>
+    <imageUrl>1623712.jpg</imageUrl>
+    <content>길들인 매를 날려 꿩이나 토끼 같은 짐승을 잡는 사냥 방식이다. 매를 받아 길들이는 시치미 같은 말이 지금도 쓰인다.</content>
+  </item>
+</result>

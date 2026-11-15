@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<result>
+  <ccbaKdcd>17</ccbaKdcd>
+  <ccbaAsno>00020000</ccbaAsno>
+  <ccbaCtcd>31</ccbaCtcd>
+  <ccbaCpno>1273100020000</ccbaCpno>
+  <longitude>127.046</longitude>
+  <latitude>37.7853</latitude>
+  <item>
+    <ccmaName>국가무형문화재</ccmaName>
+    <crltsnoNm>2</crltsnoNm>
+    <ccbaMnm1>양주별산대놀이</ccbaMnm1>
+    <ccbaMnm2>楊州別山臺놀이</ccbaMnm2>
+    <gcodeName>무형문화재</gcodeName>
+    <bcodeName>전통 공연·예술</bcodeName>
+    <mcodeName>연희</mcodeName>
+    <scodeName></scodeName>
+    <ccbaQuan></ccbaQuan>
+    <ccbaAsdt>19641207</ccbaAsdt>
+    <ccbaCtcdNm>경기도</ccbaCtcdNm>
+    <ccsiName>양주시</ccsiName>
+    <ccbaLcad>경기도 양주시</ccbaLcad>
+    <ccceName>조선시대</ccceName>
+    <ccbaPoss></ccbaPoss>
+    <ccbaAdmin>(사)양주별산대놀이보존회</ccbaAdmin>
+    <ccbaCncl>N</ccbaCncl>
+    <ccbaCndt></ccbaCndt>
+    <image>1623134.jpg</image>
+    <imageUrl>1623134.jpg</imageUrl>
+    <content>경기도 양주 지방에 전해 오는 탈놀이로 춤과 재담, 노래가 어우러진다. 파계승과 양반을 풍자하며 서민의 생각을 거침없이 드러낸다.</content>
+  </item>
+</result>

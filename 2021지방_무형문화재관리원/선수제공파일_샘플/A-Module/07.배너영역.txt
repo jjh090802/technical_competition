@@ -1,0 +1,11 @@
+[배너] 이름 | 링크 주소 | target
+문화재청 | https://www.cha.go.kr | _blank (새 창)
+한국문화재재단 | https://www.chf.or.kr | _blank (새 창)
+국립국악원 | https://www.gugak.go.kr | _blank (새 창)
+유네스코 아태무형유산센터 | https://www.unesco-ichcap.org | _blank (새 창)
+문화체육관광부 | https://www.mcst.go.kr | _blank (새 창)
+공공데이터포털 | https://www.data.go.kr | _blank (새 창)
+무형유산 디지털 아카이브 | # | _self (현재 창)
+전수교육관 찾기 | # | _self (현재 창)
+
+배너 이미지 : 이미지자료/banner1.png ~ banner8.png (위 순서)

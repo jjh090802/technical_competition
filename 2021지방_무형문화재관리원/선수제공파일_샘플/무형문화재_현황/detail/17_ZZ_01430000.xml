@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<result>
+  <ccbaKdcd>17</ccbaKdcd>
+  <ccbaAsno>01430000</ccbaAsno>
+  <ccbaCtcd>ZZ</ccbaCtcd>
+  <ccbaCpno>127ZZ01430000</ccbaCpno>
+  <longitude>0</longitude>
+  <latitude>0</latitude>
+  <item>
+    <ccmaName>국가무형문화재</ccmaName>
+    <crltsnoNm>143</crltsnoNm>
+    <ccbaMnm1>인삼재배와 약용문화</ccbaMnm1>
+    <ccbaMnm2>人蔘栽培와 藥用文化</ccbaMnm2>
+    <gcodeName>무형문화재</gcodeName>
+    <bcodeName>전통지식</bcodeName>
+    <mcodeName>의약</mcodeName>
+    <scodeName></scodeName>
+    <ccbaQuan></ccbaQuan>
+    <ccbaAsdt>20201110</ccbaAsdt>
+    <ccbaCtcdNm>전국일원</ccbaCtcdNm>
+    <ccsiName></ccsiName>
+    <ccbaLcad>전국일원</ccbaLcad>
+    <ccceName></ccceName>
+    <ccbaPoss></ccbaPoss>
+    <ccbaAdmin></ccbaAdmin>
+    <ccbaCncl>N</ccbaCncl>
+    <ccbaCndt></ccbaCndt>
+    <image></image>
+    <imageUrl></imageUrl>
+    <content>인삼을 기르고 거두어 약재와 음식으로 써 온 지식과 풍습이다. 차광막을 쳐서 그늘에서 키우는 재배법이 이어져 왔다.</content>
+  </item>
+</result>

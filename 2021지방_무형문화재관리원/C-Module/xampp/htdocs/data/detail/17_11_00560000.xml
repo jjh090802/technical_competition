@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<result>
+  <ccbaKdcd>17</ccbaKdcd>
+  <ccbaAsno>00560000</ccbaAsno>
+  <ccbaCtcd>11</ccbaCtcd>
+  <ccbaCpno>1271100560000</ccbaCpno>
+  <longitude>126.994</longitude>
+  <latitude>37.5749</latitude>
+  <item>
+    <ccmaName>국가무형문화재</ccmaName>
+    <crltsnoNm>56</crltsnoNm>
+    <ccbaMnm1>종묘제례</ccbaMnm1>
+    <ccbaMnm2>宗廟祭禮</ccbaMnm2>
+    <gcodeName>무형문화재</gcodeName>
+    <bcodeName>의례·의식</bcodeName>
+    <mcodeName>궁중의례</mcodeName>
+    <scodeName></scodeName>
+    <ccbaQuan></ccbaQuan>
+    <ccbaAsdt>19750131</ccbaAsdt>
+    <ccbaCtcdNm>서울특별시</ccbaCtcdNm>
+    <ccsiName>종로구</ccsiName>
+    <ccbaLcad>서울특별시 종로구</ccbaLcad>
+    <ccceName>조선시대</ccceName>
+    <ccbaPoss></ccbaPoss>
+    <ccbaAdmin>(사)종묘제례보존회</ccbaAdmin>
+    <ccbaCncl>N</ccbaCncl>
+    <ccbaCndt></ccbaCndt>
+    <image>1623372.jpg</image>
+    <imageUrl>1623372.jpg</imageUrl>
+    <content>조선 왕실의 사당인 종묘에서 올리던 제사 의식이다. 정해진 절차와 제기, 제복을 갖추어 엄숙하게 진행된다.</content>
+  </item>
+</result>

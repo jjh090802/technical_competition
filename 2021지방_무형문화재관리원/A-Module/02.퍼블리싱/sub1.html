@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>전체 현황 | 무형문화재관리원</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ===== 헤더: 스크롤해도 화면 위에 고정 ===== -->
+    <header class="header">
+        <!-- 윗줄: 머리말, 유틸리티 메뉴, 언어 선택 -->
+        <div class="topbar">
+            <div class="inner">
+                <p class="slogan">무형유산의 가치를 국민과 함께 나눕니다</p>
+                <ul class="util">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">문의하기</a></li>
+                </ul>
+                <!-- 언어 선택: 마우스를 올리면 목록이 펼쳐진다 -->
+                <div class="lang">
+                    <a href="#" class="lang-now">한국어</a>
+                    <ul>
+                        <li><a href="#" lang="ko">한국어</a></li>
+                        <li><a href="#" lang="en">English</a></li>
+                        <li><a href="#" lang="zh-Hans">中文(简体)</a></li>
+                        <li><a href="#" lang="ja">日本語</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 아랫줄: 심벌로고 + 메뉴 내비게이션 -->
+        <div class="inner navbar">
+            <h1 class="logo"><a href="#"><img src="images/logo.svg" alt="무형문화재관리원" title="무형문화재관리원"></a></h1>
+
+            <!-- 작은 화면에서 메뉴를 여닫는 버튼 (체크박스) -->
+            <input type="checkbox" id="menu-open" class="menu-open">
+            <label for="menu-open" class="menu-btn"><span>메뉴 열기</span></label>
+
+            <!-- 메뉴: 1depth 에 마우스를 올리면 2depth·3depth 가 미끄러지듯 내려온다 -->
+            <nav class="gnb">
+                <ul>
+                    <li>
+                        <a href="#">무형문화재관리원</a>
+                        <div class="sub">
+                            <div class="inner">
+                                <p class="sub-title"><strong>무형문화재관리원</strong>무형유산을 지키고 잇는 사람들</p>
+                                <ul>
+                                    <li><a href="#">소개</a></li>
+                                    <li>
+                                        <a href="#">일반현황</a>
+                                        <ul>
+                                            <li><a href="#">설립목적</a></li>
+                                            <li><a href="#">연혁</a></li>
+                                            <li><a href="#">역할</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">주요업무계획</a></li>
+                                    <li><a href="#">조직 및 구성</a></li>
+                                    <li><a href="#">전화번호</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">무형문화재 현황</a>
+                        <div class="sub">
+                            <div class="inner">
+                                <p class="sub-title"><strong>무형문화재 현황</strong>분야별로 만나는 우리 무형문화재</p>
+                                <ul>
+                                    <li><a href="#">전통 공연·예술</a></li>
+                                    <li><a href="#">전통기술</a></li>
+                                    <li><a href="#">전통지식</a></li>
+                                    <li><a href="#">구전 전통 및 표현</a></li>
+                                    <li><a href="#">전통 생활관습</a></li>
+                                    <li><a href="#">의례·의식</a></li>
+                                    <li><a href="#">전통 놀이·무예</a></li>
+                                    <li><a href="#">전체 현황</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">행사 안내</a>
+                        <div class="sub">
+                            <div class="inner">
+                                <p class="sub-title"><strong>행사 안내</strong>공연·전시·교육 일정을 한눈에</p>
+                                <ul>
+                                    <li>
+                                        <a href="#">공연</a>
+                                        <ul>
+                                            <li><a href="#">월간 공연 일정</a></li>
+                                            <li><a href="#">연간 공연 일정</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">전시</a>
+                                        <ul>
+                                            <li><a href="#">관람 안내</a></li>
+                                            <li><a href="#">전시실</a></li>
+                                            <li><a href="#">디지털 체험관</a></li>
+                                            <li><a href="#">기획 전시실</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">교육</a>
+                                        <ul>
+                                            <li><a href="#">전문 교육</a></li>
+                                            <li><a href="#">사회 교육</a></li>
+                                            <li><a href="#">연간 교육일정</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">전승지원</a>
+                        <div class="sub">
+                            <div class="inner">
+                                <p class="sub-title"><strong>전승지원</strong>장인의 손끝을 다음 세대로</p>
+                                <ul>
+                                    <li><a href="#">공방</a></li>
+                                    <li><a href="#">공예품 갤러리</a></li>
+                                    <li><a href="#">전수교육관 현황</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">공개 데이터</a>
+                        <div class="sub">
+                            <div class="inner">
+                                <p class="sub-title"><strong>공개 데이터</strong>누구나 쓰는 무형유산 정보</p>
+                                <ul>
+                                    <li><a href="#">무형문화재 현황 조회</a></li>
+                                    <li><a href="#">공연 일정 조회</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== 서브 비주얼 ===== -->
+    <div class="sub-visual">
+        <div class="inner">
+            <strong>무형문화재 현황</strong>
+            <p>분야별로 만나는 우리 무형문화재</p>
+        </div>
+    </div>
+
+    <div class="inner sub-wrap">
+        <!-- 서브 메뉴 -->
+        <nav class="lnb">
+            <h2>무형문화재 현황</h2>
+            <ul>
+                <li><a href="#">전통 공연·예술</a></li>
+                <li><a href="#">전통기술</a></li>
+                <li><a href="#">전통지식</a></li>
+                <li><a href="#">구전 전통 및 표현</a></li>
+                <li><a href="#">전통 생활관습</a></li>
+                <li><a href="#">의례·의식</a></li>
+                <li><a href="#">전통 놀이·무예</a></li>
+                <li class="on"><a href="#">전체 현황</a></li>
+            </ul>
+        </nav>
+
+        <!-- 콘텐츠 -->
+        <main class="content">
+            <!-- 타이틀 + 현재 위치 내비게이터 -->
+            <div class="content-head">
+                <h2>전체 현황</h2>
+                <ol class="location">
+                    <li><a href="#"><img src="images/home.svg" alt="홈" title="홈"></a></li>
+                    <li><a href="#">무형문화재 현황</a></li>
+                    <li>전체 현황</li>
+                </ol>
+            </div>
+
+            <!-- 목록 정보 + 보기 방식 -->
+            <div class="list-top">
+                <p class="count">총 <b>154</b>건 · <b>1</b> / 16 페이지</p>
+                <p class="view-btns"><a href="#">앨범</a><a href="#" class="on">목록</a></p>
+            </div>
+
+            <!-- 목록 -->
+            <table class="board">
+                <caption class="blind">무형문화재 전체 현황 목록</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">순번</th>
+                        <th scope="col">종목</th>
+                        <th scope="col">명칭</th>
+                        <th scope="col">소재지</th>
+                        <th scope="col" class="hide-m">관리자(단체)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>국가무형문화재 제1호</td>
+                        <td class="name"><a href="#">종묘제례악</a></td>
+                        <td>서울특별시 종로구</td>
+                        <td class="hide-m">(사)종묘제례악보존회</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>국가무형문화재 제2호</td>
+                        <td class="name"><a href="#">양주별산대놀이</a></td>
+                        <td>경기도 양주시</td>
+                        <td class="hide-m">(사)양주별산대놀이보존회</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>국가무형문화재 제3호</td>
+                        <td class="name"><a href="#">남사당놀이</a></td>
+                        <td>서울특별시</td>
+                        <td class="hide-m">(사)남사당놀이보존회</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>국가무형문화재 제4호</td>
+                        <td class="name"><a href="#">갓일</a></td>
+                        <td>서울특별시</td>
+                        <td class="hide-m">갓일 보유자</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>국가무형문화재 제5호</td>
+                        <td class="name"><a href="#">판소리</a></td>
+                        <td>전국일원</td>
+                        <td class="hide-m">판소리 보유자</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>국가무형문화재 제6호</td>
+                        <td class="name"><a href="#">통영오광대</a></td>
+                        <td>경상남도 통영시</td>
+                        <td class="hide-m">(사)통영오광대보존회</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>국가무형문화재 제7호</td>
+                        <td class="name"><a href="#">고성오광대</a></td>
+                        <td>경상남도 고성군</td>
+                        <td class="hide-m">(사)고성오광대보존회</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>국가무형문화재 제8호</td>
+                        <td class="name"><a href="#">강강술래</a></td>
+                        <td>전라남도 해남군</td>
+                        <td class="hide-m">(사)강강술래보존회</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>국가무형문화재 제9호</td>
+                        <td class="name"><a href="#">은산별신제</a></td>
+                        <td>충청남도 부여군</td>
+                        <td class="hide-m">(사)은산별신제보존회</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>국가무형문화재 제10호</td>
+                        <td class="name"><a href="#">나전장</a></td>
+                        <td>서울특별시</td>
+                        <td class="hide-m">나전장 보유자</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- 페이지 번호 -->
+            <p class="paging">
+                <a href="#" title="처음 페이지">&lt;&lt;</a>
+                <a href="#" title="이전 페이지">&lt;</a>
+                <strong title="현재 페이지">1</strong>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+                <a href="#">9</a>
+                <a href="#">10</a>
+                <a href="#" title="다음 페이지">&gt;</a>
+                <a href="#" title="마지막 페이지">&gt;&gt;</a>
+            </p>
+        </main>
+    </div>
+
+    <!-- ===== 푸터 ===== -->
+    <footer class="footer">
+        <div class="inner">
+            <ul class="footer-menu">
+                <li><a href="#">이용 안내</a></li>
+                <li><a href="#" class="point">개인정보 처리방침</a></li>
+                <li><a href="#">저작권 보호 정책</a></li>
+                <li><a href="#">도로명 주소안내</a></li>
+                <li><a href="#">사이트 오류 신고</a></li>
+            </ul>
+            <div class="footer-info">
+                <img src="images/logo_white.svg" alt="무형문화재관리원" title="무형문화재관리원" class="footer-logo">
+                <div>
+                    <address>(54931) 전라북도 전주시 완산구 전통문화로 95 무형문화재관리원</address>
+                    <p>대표전화 063-123-4567 <span>|</span> 팩스 063-123-4568</p>
+                    <p class="copy">COPYRIGHT © 무형문화재관리원. ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

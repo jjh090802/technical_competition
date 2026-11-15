@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<result>
+  <ccbaKdcd>17</ccbaKdcd>
+  <ccbaAsno>00300000</ccbaAsno>
+  <ccbaCtcd>11</ccbaCtcd>
+  <ccbaCpno>1271100300000</ccbaCpno>
+  <longitude>0</longitude>
+  <latitude>0</latitude>
+  <item>
+    <ccmaName>국가무형문화재</ccmaName>
+    <crltsnoNm>30</crltsnoNm>
+    <ccbaMnm1>가곡</ccbaMnm1>
+    <ccbaMnm2>歌曲</ccbaMnm2>
+    <gcodeName>무형문화재</gcodeName>
+    <bcodeName>전통 공연·예술</bcodeName>
+    <mcodeName>음악</mcodeName>
+    <scodeName></scodeName>
+    <ccbaQuan></ccbaQuan>
+    <ccbaAsdt>19691110</ccbaAsdt>
+    <ccbaCtcdNm>서울특별시</ccbaCtcdNm>
+    <ccsiName></ccsiName>
+    <ccbaLcad>서울특별시</ccbaLcad>
+    <ccceName>조선시대</ccceName>
+    <ccbaPoss></ccbaPoss>
+    <ccbaAdmin>(사)가곡보존회</ccbaAdmin>
+    <ccbaCncl>N</ccbaCncl>
+    <ccbaCndt></ccbaCndt>
+    <image>1623304.jpg</image>
+    <imageUrl>1623304.jpg</imageUrl>
+    <content>시조시를 관현악 반주에 얹어 부르는 전통 성악곡이다. 남창과 여창으로 나뉘며 절제된 선율 속에 깊은 멋을 담는다.</content>
+  </item>
+</result>

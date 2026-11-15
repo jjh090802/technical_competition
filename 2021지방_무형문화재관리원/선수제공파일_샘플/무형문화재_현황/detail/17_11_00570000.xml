@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<result>
+  <ccbaKdcd>17</ccbaKdcd>
+  <ccbaAsno>00570000</ccbaAsno>
+  <ccbaCtcd>11</ccbaCtcd>
+  <ccbaCpno>1271100570000</ccbaCpno>
+  <longitude>0</longitude>
+  <latitude>0</latitude>
+  <item>
+    <ccmaName>국가무형문화재</ccmaName>
+    <crltsnoNm>57</crltsnoNm>
+    <ccbaMnm1>경기민요</ccbaMnm1>
+    <ccbaMnm2>京畿民謠</ccbaMnm2>
+    <gcodeName>무형문화재</gcodeName>
+    <bcodeName>구전 전통 및 표현</bcodeName>
+    <mcodeName>민요</mcodeName>
+    <scodeName></scodeName>
+    <ccbaQuan></ccbaQuan>
+    <ccbaAsdt>19750701</ccbaAsdt>
+    <ccbaCtcdNm>서울특별시</ccbaCtcdNm>
+    <ccsiName></ccsiName>
+    <ccbaLcad>서울특별시</ccbaLcad>
+    <ccceName></ccceName>
+    <ccbaPoss></ccbaPoss>
+    <ccbaAdmin>(사)경기민요보존회</ccbaAdmin>
+    <ccbaCncl>N</ccbaCncl>
+    <ccbaCndt></ccbaCndt>
+    <image></image>
+    <imageUrl></imageUrl>
+    <content>서울과 경기 지방에서 불려 온 민요로 맑고 경쾌한 소리가 특징이다. 노랫가락, 창부타령, 아리랑 등이 널리 알려져 있다.</content>
+  </item>
+</result>

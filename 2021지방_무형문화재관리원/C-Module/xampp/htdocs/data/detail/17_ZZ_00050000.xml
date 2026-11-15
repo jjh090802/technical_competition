@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<result>
+  <ccbaKdcd>17</ccbaKdcd>
+  <ccbaAsno>00050000</ccbaAsno>
+  <ccbaCtcd>ZZ</ccbaCtcd>
+  <ccbaCpno>127ZZ00050000</ccbaCpno>
+  <longitude>0</longitude>
+  <latitude>0</latitude>
+  <item>
+    <ccmaName>국가무형문화재</ccmaName>
+    <crltsnoNm>5</crltsnoNm>
+    <ccbaMnm1>판소리</ccbaMnm1>
+    <ccbaMnm2>판소리</ccbaMnm2>
+    <gcodeName>무형문화재</gcodeName>
+    <bcodeName>전통 공연·예술</bcodeName>
+    <mcodeName>음악</mcodeName>
+    <scodeName></scodeName>
+    <ccbaQuan></ccbaQuan>
+    <ccbaAsdt>19641224</ccbaAsdt>
+    <ccbaCtcdNm>전국일원</ccbaCtcdNm>
+    <ccsiName></ccsiName>
+    <ccbaLcad>전국일원</ccbaLcad>
+    <ccceName>조선시대</ccceName>
+    <ccbaPoss></ccbaPoss>
+    <ccbaAdmin></ccbaAdmin>
+    <ccbaCncl>N</ccbaCncl>
+    <ccbaCndt></ccbaCndt>
+    <image>1623185.jpg</image>
+    <imageUrl>1623185.jpg</imageUrl>
+    <content>소리꾼 한 사람이 고수의 북장단에 맞추어 소리와 아니리, 발림으로 긴 이야기를 엮어 가는 음악이다. 춘향가, 심청가 등 다섯 바탕이 전한다.</content>
+  </item>
+</result>

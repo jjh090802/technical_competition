@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<result>
+  <ccbaKdcd>17</ccbaKdcd>
+  <ccbaAsno>00010000</ccbaAsno>
+  <ccbaCtcd>11</ccbaCtcd>
+  <ccbaCpno>1271100010000</ccbaCpno>
+  <longitude>126.994</longitude>
+  <latitude>37.5749</latitude>
+  <item>
+    <ccmaName>국가무형문화재</ccmaName>
+    <crltsnoNm>1</crltsnoNm>
+    <ccbaMnm1>종묘제례악</ccbaMnm1>
+    <ccbaMnm2>宗廟祭禮樂</ccbaMnm2>
+    <gcodeName>무형문화재</gcodeName>
+    <bcodeName>전통 공연·예술</bcodeName>
+    <mcodeName>음악</mcodeName>
+    <scodeName></scodeName>
+    <ccbaQuan></ccbaQuan>
+    <ccbaAsdt>19641207</ccbaAsdt>
+    <ccbaCtcdNm>서울특별시</ccbaCtcdNm>
+    <ccsiName>종로구</ccsiName>
+    <ccbaLcad>서울특별시 종로구</ccbaLcad>
+    <ccceName>조선시대</ccceName>
+    <ccbaPoss></ccbaPoss>
+    <ccbaAdmin>(사)종묘제례악보존회</ccbaAdmin>
+    <ccbaCncl>N</ccbaCncl>
+    <ccbaCndt></ccbaCndt>
+    <image>1623117.jpg</image>
+    <imageUrl>1623117.jpg</imageUrl>
+    <content>종묘에서 역대 왕과 왕비의 신위를 모시는 제사 때 연주하는 기악, 노래, 춤을 함께 이르는 말이다. 편종과 편경 같은 아악기와 향악기가 어우러져 장엄한 소리를 낸다.</content>
+  </item>
+</result>

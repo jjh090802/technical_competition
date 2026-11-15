@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<result>
+  <ccbaKdcd>17</ccbaKdcd>
+  <ccbaAsno>00040000</ccbaAsno>
+  <ccbaCtcd>11</ccbaCtcd>
+  <ccbaCpno>1271100040000</ccbaCpno>
+  <longitude>0</longitude>
+  <latitude>0</latitude>
+  <item>
+    <ccmaName>국가무형문화재</ccmaName>
+    <crltsnoNm>4</crltsnoNm>
+    <ccbaMnm1>갓일</ccbaMnm1>
+    <ccbaMnm2>갓일</ccbaMnm2>
+    <gcodeName>무형문화재</gcodeName>
+    <bcodeName>전통기술</bcodeName>
+    <mcodeName>공예</mcodeName>
+    <scodeName></scodeName>
+    <ccbaQuan></ccbaQuan>
+    <ccbaAsdt>19641224</ccbaAsdt>
+    <ccbaCtcdNm>서울특별시</ccbaCtcdNm>
+    <ccsiName></ccsiName>
+    <ccbaLcad>서울특별시</ccbaLcad>
+    <ccceName>조선시대</ccceName>
+    <ccbaPoss></ccbaPoss>
+    <ccbaAdmin>갓일 보유자</ccbaAdmin>
+    <ccbaCncl>N</ccbaCncl>
+    <ccbaCndt></ccbaCndt>
+    <image></image>
+    <imageUrl></imageUrl>
+    <content>말총과 대나무를 가늘게 다듬어 갓을 만드는 기술이다. 총모자, 양태, 입자의 세 공정이 나뉘어 있어 여러 장인의 손을 거쳐 한 점이 완성된다.</content>
+  </item>
+</result>

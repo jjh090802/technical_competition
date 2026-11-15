@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<result>
+  <ccbaKdcd>17</ccbaKdcd>
+  <ccbaAsno>00510000</ccbaAsno>
+  <ccbaCtcd>36</ccbaCtcd>
+  <ccbaCpno>1273600510000</ccbaCpno>
+  <longitude>126.264</longitude>
+  <latitude>34.4867</latitude>
+  <item>
+    <ccmaName>국가무형문화재</ccmaName>
+    <crltsnoNm>51</crltsnoNm>
+    <ccbaMnm1>남도들노래</ccbaMnm1>
+    <ccbaMnm2>南道들노래</ccbaMnm2>
+    <gcodeName>무형문화재</gcodeName>
+    <bcodeName>구전 전통 및 표현</bcodeName>
+    <mcodeName>민요</mcodeName>
+    <scodeName></scodeName>
+    <ccbaQuan></ccbaQuan>
+    <ccbaAsdt>19730811</ccbaAsdt>
+    <ccbaCtcdNm>전라남도</ccbaCtcdNm>
+    <ccsiName>진도군</ccsiName>
+    <ccbaLcad>전라남도 진도군</ccbaLcad>
+    <ccceName></ccceName>
+    <ccbaPoss></ccbaPoss>
+    <ccbaAdmin>(사)남도들노래보존회</ccbaAdmin>
+    <ccbaCncl>N</ccbaCncl>
+    <ccbaCndt></ccbaCndt>
+    <image>1623355.jpg</image>
+    <imageUrl>1623355.jpg</imageUrl>
+    <content>논에서 모를 찌고 심고 김을 맬 때 부르던 노동요이다. 선소리꾼이 앞소리를 메기면 일꾼들이 받으며 일의 고단함을 덜었다.</content>
+  </item>
+</result>

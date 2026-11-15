@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<result>
+  <ccbaKdcd>17</ccbaKdcd>
+  <ccbaAsno>00950000</ccbaAsno>
+  <ccbaCtcd>50</ccbaCtcd>
+  <ccbaCpno>1275000950000</ccbaCpno>
+  <longitude>0</longitude>
+  <latitude>0</latitude>
+  <item>
+    <ccmaName>국가무형문화재</ccmaName>
+    <crltsnoNm>95</crltsnoNm>
+    <ccbaMnm1>제주민요</ccbaMnm1>
+    <ccbaMnm2>濟州民謠</ccbaMnm2>
+    <gcodeName>무형문화재</gcodeName>
+    <bcodeName>구전 전통 및 표현</bcodeName>
+    <mcodeName>민요</mcodeName>
+    <scodeName></scodeName>
+    <ccbaQuan></ccbaQuan>
+    <ccbaAsdt>19890901</ccbaAsdt>
+    <ccbaCtcdNm>제주특별자치도</ccbaCtcdNm>
+    <ccsiName></ccsiName>
+    <ccbaLcad>제주특별자치도</ccbaLcad>
+    <ccceName></ccceName>
+    <ccbaPoss></ccbaPoss>
+    <ccbaAdmin>(사)제주민요보존회</ccbaAdmin>
+    <ccbaCncl>N</ccbaCncl>
+    <ccbaCndt></ccbaCndt>
+    <image>1623474.jpg</image>
+    <imageUrl>1623474.jpg</imageUrl>
+    <content>제주 사람들이 밭일과 물질, 방아 찧기를 하며 부르던 노래이다. 섬의 말씨와 생활이 노랫말에 그대로 묻어난다.</content>
+  </item>
+</result>
